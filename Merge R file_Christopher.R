@@ -19,6 +19,7 @@ PSLE2013_IMPROVEMENT <- read.csv("PSLE2013_IMPROVEMENT.csv", stringsAsFactors = 
 PSLE2013_RANKING <- read.csv("PSLE2013_RANKING.csv", stringsAsFactors = FALSE, header = FALSE) # Import with no header
 PSLE2014_IMPROVEMENT <- read.csv("PSLE2014_IMPROVEMENT.csv", stringsAsFactors = FALSE, header = FALSE) # Import with no header
 PSLE2014_RANKING <- read.csv("PSLE2014_RANKING.csv", stringsAsFactors = FALSE, header = FALSE) # Import with no header
+MASTER <- read.csv("MASTER.csv", stringsAsFactors = FALSE, header = FALSE) # Import with no header
 
 summary(PSLE2012_RANKING$V4)
 x <- summary(PSLE2012_RANKING$V4)
