@@ -187,8 +187,10 @@ write.table(File2014, file = "C:/Users/Christopher/Google Drive/R/File2014_Clean
 ######################################################
 File2013_2014 <- rbind(File2013, File2014)
 write.table(File2013_2014, file = "C:/Users/Christopher/Google Drive/R/File2013_2014_Cleaned.csv", sep=";", row.names=FALSE)
-list <- duplicated(File2013_2014) # No duplicates found
 
 #CSV only containing Kagera
 File2013_2014_Kagera <- subset(File2013_2014, region == "Kagera") # Get rid of non-Kagera
 write.table(File2013_2014_Kagera, file = "C:/Users/Christopher/Google Drive/R/File2013_2014_Cleaned_Kagera.csv", sep=";", row.names=FALSE)
+
+list <- duplicated(File2013_2014_Kagera$student_name)
+table(list)
